@@ -476,8 +476,10 @@ def reports_list(pid: str, authorization: Optional[str] = Header(default=None)) 
 
 
 @app.get("/api/reports/{rid}/download")
-def download_report(rid: str, authorization: Optional[str] = Header(default=None)):
-    user = _require_user(authorization)
+def download_report(rid: str, token: Optional[str] = None,
+                    authorization: Optional[str] = Header(default=None)):
+    auth_str = authorization or (f"Bearer {token}" if token else None)
+    user = _require_user(auth_str)
     r = repo.get_report(rid)
     if r is None or not Path(r["path"]).exists():
         raise HTTPException(404, f"报告不存在: {rid}")
