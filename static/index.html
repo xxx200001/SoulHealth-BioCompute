@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOULHEALTH · AI 健康科研平台 Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="brand"><span class="seal">魂</span>
+      <div><h1>SOULHEALTH</h1><p>AI 健康科研平台 · 演示系统</p></div>
+    </div>
+    <div class="hero-right">
+      <div class="mode-chip" id="modeChip">连接中…</div>
+      <div class="user-chip hidden" id="userChip">
+        <span id="userLabel"></span>
+        <button class="btn ghost tiny" id="btnAdminPanel" hidden>管理员面板</button>
+        <button class="btn ghost tiny" id="btnLogout">退出登录</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 登录 / 注册 遮罩 -->
+<div class="auth-mask" id="authMask">
+  <div class="auth-card">
+    <h2>登录 SOULHEALTH</h2>
+    <p class="hint">首次启动的管理员账号密码已打印在服务端控制台（仅显示一次）。</p>
+    <div class="auth-tabs">
+      <button class="auth-tab active" data-tab="login">登录</button>
+      <button class="auth-tab" data-tab="register">注册普通用户</button>
+    </div>
+    <div class="auth-pane" id="paneLogin">
+      <label>用户名<input id="loginUser" type="text" autocomplete="username"></label>
+      <label>密码<input id="loginPass" type="password" autocomplete="current-password"></label>
+      <button class="btn primary full" id="btnLogin">登录</button>
+    </div>
+    <div class="auth-pane hidden" id="paneRegister">
+      <label>用户名<input id="regUser" type="text" autocomplete="username"></label>
+      <label>显示名（选填）<input id="regDisplay" type="text"></label>
+      <label>密码（至少 6 位）<input id="regPass" type="password" autocomplete="new-password"></label>
+      <button class="btn primary full" id="btnRegister">注册并登录</button>
+    </div>
+    <p class="auth-err hidden" id="authErr"></p>
+  </div>
+</div>
+
+<!-- 管理员面板 -->
+<div class="admin-mask hidden" id="adminMask">
+  <div class="admin-card">
+    <div class="admin-head"><h2>用户管理</h2>
+      <button class="btn ghost tiny" id="btnCloseAdmin">关闭</button></div>
+    <div class="form-row">
+      <label>新用户名<input id="auName" type="text"></label>
+      <label>密码<input id="auPass" type="password"></label>
+      <label>角色
+        <select id="auRole"><option value="user">普通用户</option><option value="admin">管理员</option></select>
+      </label>
+      <button class="btn primary" id="btnAdminCreate">创建用户</button>
+    </div>
+    <div id="adminUserList" class="admin-user-list"></div>
+  </div>
+</div>
+
+<main class="layout hidden" id="mainApp">
+  <aside class="rail">
+    <h2>分析过程</h2>
+    <ol class="rail-track" id="railTrack">
+      <li data-step="LOAD_SNAPSHOT"><b>载入档案快照</b><em></em></li>
+      <li data-step="IDENTIFY_RISKS"><b>疾病/风险识别</b><em></em></li>
+      <li data-step="MATCH_KNOWLEDGE"><b>医学知识匹配</b><em></em></li>
+      <li data-step="PLAN_BIOCOMPUTE"><b>生物计算判断</b><em></em></li>
+      <li data-step="EXEC_BIOCOMPUTE"><b>生物计算执行</b><em></em></li>
+      <li data-step="AI_INTERPRET"><b>AI 综合解读</b><em></em></li>
+      <li data-step="GENERATE_REPORTS"><b>最终报告生成</b><em></em></li>
+    </ol>
+    <p class="rail-note">七节点 Agent 状态机<br>每一步真实耗时与产出可回溯</p>
+  </aside>
+
+  <div class="flow">
+    <!-- 00 档案检索：长期记忆入口 -->
+    <section class="card" id="secLibrary">
+      <div class="card-head"><span class="step-no">00</span>
+        <div><h2>我的健康档案</h2><p>按姓名或身份证后四位检索找回，历史数据持续调用；普通用户只看到自己名下档案</p></div>
+      </div>
+      <div class="lib-bar">
+        <input id="searchInput" type="search" placeholder="按姓名或身份证后四位搜索…">
+        <button class="btn ghost" id="btnRefreshList">刷新</button>
+      </div>
+      <div id="patientList" class="patient-list"><p class="hint">尚无档案，请在下方建立。</p></div>
+    </section>
+
+    <!-- 01 建档 / 找回 -->
+    <section class="card" id="secPatient">
+      <div class="card-head"><span class="step-no">01</span>
+        <div><h2>建立 / 找回档案</h2><p>身份匹配唯一依据：姓名 + 身份证后四位精确匹配；不填后四位则每次新建，不做模糊猜测</p></div>
+      </div>
+      <div class="form-row">
+        <label>姓名<input id="fName" type="text" maxlength="30" placeholder="必填，仅存本地库"></label>
+        <label>身份证后四位<input id="fId4" type="text" maxlength="4" placeholder="如 1234，强烈建议填写"></label>
+        <label>性别
+          <select id="fSex"><option value="female">女</option><option value="male">男</option></select>
+        </label>
+        <label>年龄<input id="fAge" type="number" min="1" max="120" placeholder="岁"></label>
+        <label>身高<input id="fHeight" type="number" min="80" max="230" step="0.1" placeholder="cm"></label>
+        <label>体重<input id="fWeight" type="number" min="20" max="300" step="0.1" placeholder="kg"></label>
+      </div>
+      <div class="form-row">
+        <button class="btn primary" id="btnCreate">建立 / 找回档案</button>
+        <button class="btn ghost" id="btnDemo">载入演示患者</button>
+        <span class="patient-chip hidden" id="patientChip"></span>
+        <button class="btn ghost hidden" id="btnExit">退出档案</button>
+      </div>
+      <p class="hint">姓名与身份证后四位仅保存在本地数据库用于档案匹配，绝不发往任何外部服务；对外分析与报告默认使用化名。</p>
+    </section>
+
+    <!-- 02 数据输入：图片上传 + 手动录入 两种入口并存 -->
+    <section class="card locked" id="secUpload">
+      <div class="card-head"><span class="step-no">02</span>
+        <div><h2>数据输入</h2><p>上传检查报告图片自动抽取，或手动结构化录入；两种方式可同时使用</p></div>
+      </div>
+
+      <h3 class="sub-h">方式一：上传报告图片（视觉模型抽取）<span class="doc-count-tag" id="docCountBadge">本次未上传图片</span></h3>
+      <label class="dropzone" id="dropzone">
+        <input type="file" id="fileInput" multiple accept=".jpg,.jpeg,.png,.webp,.pdf" hidden>
+        <span><b>点击或拖入</b> 检查报告图片（超声 / 化验单 / 病历，jpg·png·pdf）</span>
+        <span class="dropzone-subhint" id="dropzoneSubhint">支持多图连续拖拽/点击上传 · 本次已成功解析入档 <b id="dropzoneCount">0</b> 张图片</span>
+      </label>
+      <div class="form-row">
+        <button class="btn ghost hidden" id="btnSelftest">视觉链路自检</button>
+        <span class="hint">上传报错「模型没收到图像」时，点此确认所配模型是否支持读图</span>
+      </div>
+      <div id="selftestBox" class="selftest hidden"></div>
+      <div id="docList" class="doc-list"></div>
+
+      <h3 class="sub-h">方式二：手动录入化验指标</h3>
+      <div class="entry-grid">
+        <label>指标代码<input id="obsCode" type="text" placeholder="如 ALT、GLU、TG"></label>
+        <label>中文名<input id="obsDisplay" type="text" placeholder="如 丙氨酸氨基转移酶"></label>
+        <label>数值<input id="obsValue" type="number" step="0.01" placeholder="如 78"></label>
+        <label>单位<input id="obsUnit" type="text" placeholder="如 U/L"></label>
+        <label>参考下限<input id="obsRefLow" type="number" step="0.01" placeholder="选填"></label>
+        <label>参考上限<input id="obsRefHigh" type="number" step="0.01" placeholder="选填"></label>
+      </div>
+      <div class="form-row"><button class="btn ghost" id="btnAddObs">+ 添加指标</button>
+        <span class="hint">异常标记按参考范围自动判定，也可留空</span></div>
+
+      <h3 class="sub-h">手动录入影像 / 查体所见 与 诊断提示</h3>
+      <div class="entry-grid">
+        <label>脏器/部位<input id="fdOrgan" type="text" placeholder="如 肝脏"></label>
+        <label>所见描述<input id="fdDesc" type="text" placeholder="如 肝脏体积增大，回声增强"></label>
+        <label>异常关键词<input id="fdFlags" type="text" placeholder="顿号分隔，如 回声增强、欠均匀"></label>
+      </div>
+      <div class="form-row"><button class="btn ghost" id="btnAddFinding">+ 添加所见</button></div>
+      <div class="entry-grid">
+        <label style="grid-column:1/-1">诊断提示原文<input id="impText" type="text" placeholder="照抄报告单「超声提示/诊断意见」栏，如：脂肪肝"></label>
+      </div>
+      <div class="form-row"><button class="btn ghost" id="btnAddImpression">+ 添加提示</button></div>
+
+      <div class="note-row">
+        <textarea id="noteInput" rows="2" placeholder="补充症状描述 / 主诉 / 病史（如：近两月失眠、咽干、乏力…），将并入档案供 Agent 与问答参考"></textarea>
+        <button class="btn ghost" id="btnNote">保存备注</button>
+      </div>
+      <div id="archivePanel" class="archive hidden"></div>
+    </section>
+
+    <!-- 03 智能分析 -->
+    <section class="card locked" id="secAnalyze">
+      <div class="card-head"><span class="step-no">03</span>
+        <div><h2>AI 智能分析</h2><p>风险识别 → 知识匹配 → 机制链 → 生物计算，全程留痕</p></div>
+      </div>
+      <div class="form-row">
+        <button class="btn primary" id="btnAnalyze">开始智能分析</button>
+        <span class="hint" id="analyzeHint"></span>
+      </div>
+      <div id="historyWrap" class="history hidden">
+        <h3>历次分析（点击回放）</h3>
+        <div id="historyList"></div>
+      </div>
+      <div id="results" class="results"></div>
+    </section>
+
+    <!-- 04 报告 -->
+    <section class="card locked" id="secReports">
+      <div class="card-head"><span class="step-no">04</span>
+        <div><h2>分析报告</h2><p>《个性化健康分析报告》《药食同源代茶饮建议》docx + md，均过合规闸</p></div>
+      </div>
+      <div id="reportList" class="report-list"></div>
+    </section>
+
+    <!-- 05 健康问答 -->
+    <section class="card locked" id="secAsk">
+      <div class="card-head"><span class="step-no">05</span>
+        <div><h2>健康问答</h2><p>基于当前档案数据（含历次分析趋势）真实作答（需模型密钥；回答经合规校验）</p></div>
+      </div>
+      <div id="qaLog" class="qa-log"></div>
+      <div class="qa-bar">
+        <input id="qaInput" type="text" maxlength="200" placeholder="如：我的肝功能这次和上次比是好转了吗？">
+        <button class="btn primary" id="btnAsk">提问</button>
+      </div>
+      <p class="hint">健康科普与生活方式建议，不替代医疗诊断；异常指标请及时就医。</p>
+    </section>
+
+    <footer class="foot">
+      <p>SOULHEALTH Demo · 本系统输出为健康管理辅助信息，不替代医生诊断与治疗建议。</p>
+    </footer>
+  </div>
+</main>
+
+<div class="toast hidden" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>

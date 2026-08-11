@@ -1,0 +1,15 @@
+{
+  "document_type": "lab_report",
+  "exam_date": "2026-03-28",
+  "patient": {"sex": "female", "age_years": 25},
+  "exam_info": null,
+  "findings": [],
+  "impressions": [],
+  "observations": [
+    {"code": "ALT", "display": "丙氨酸氨基转移酶", "value_num": 97, "unit": "U/L", "ref_low": 7, "ref_high": 40, "abnormal_flag": "H"},
+    {"code": "GGT", "display": "γ-谷氨酰转移酶", "value_num": 64, "unit": "U/L", "ref_low": 7, "ref_high": 45, "abnormal_flag": "H"}
+  ],
+  "notes": "数值来自业务方提供的样例患者档案（Demo 演示用）。",
+  "deidentified": true,
+  "engine": "mock"
+}

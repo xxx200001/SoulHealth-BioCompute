@@ -1,0 +1,2762 @@
+{
+ "_说明": "药食同源候选材料库（阶段五全量版，共 116 种）：覆盖国家卫健委 2002 年《既是食品又是药品的物品名单》87 种、2014 年试点品种、2019 年试点转正 9 种、2023 年增补 4 种。status 标注目录归属与批次；试点/增补品种使用前请核实属地最新公告。特殊标签：seasoning=香料类不入代茶饮主方；animal=动物类仅目录完整性收录不参与组方；toxic_caution=有毒性/禁忌明确（白果、桃仁等）绝不入泡饮方。本目录性味归经/功效/剂量按《中国药典》与公开文献整理，为演示系统知识库而非官方数据源，实际投产前须由具备资质的中医师/药师逐条核实并对照卫健委最新公告更新，不构成处方依据。",
+ "ingredients": [
+  {
+   "name": "山楂",
+   "processing": "炒山楂",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "酸、甘，微温",
+   "meridians": "脾、胃、肝经",
+   "functions": [
+    "消食化积",
+    "行气散瘀"
+   ],
+   "tags": [
+    "food_stagnation",
+    "fatty_liver",
+    "lipid",
+    "obesity"
+   ],
+   "dose_g": [
+    6,
+    10
+   ],
+   "cautions": [
+    "胃酸过多、胃炎/溃疡者减量（可减至4g）或慎用",
+    "孕妇不宜大量"
+   ],
+   "modern": "所含黄酮类与有机酸在调脂方向研究较多；炒制后酸性刺激较生品缓和"
+  },
+  {
+   "name": "荷叶",
+   "processing": "干品",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "苦，平",
+   "meridians": "肝、脾、胃经",
+   "functions": [
+    "清暑化湿",
+    "升发清阳"
+   ],
+   "tags": [
+    "obesity",
+    "lipid",
+    "damp"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "脾胃虚寒者适量"
+   ],
+   "modern": "荷叶碱等生物碱在体重与脂代谢方向有研究报道，个体差异大"
+  },
+  {
+   "name": "决明子",
+   "processing": "炒决明子",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、苦、咸，微寒",
+   "meridians": "肝、大肠经",
+   "functions": [
+    "清肝明目",
+    "润肠通便"
+   ],
+   "tags": [
+    "fatty_liver",
+    "lipid"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "便溏者减量或去",
+    "孕妇慎用",
+    "低血压者注意观察"
+   ],
+   "modern": "含蒽醌类成分，长期大量可致滑肠；炒制后泻下之性减缓"
+  },
+  {
+   "name": "茯苓",
+   "processing": "块/片",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、淡，平",
+   "meridians": "心、肺、脾、肾经",
+   "functions": [
+    "利水渗湿",
+    "健脾宁心"
+   ],
+   "tags": [
+    "damp",
+    "edema",
+    "spleen_deficiency",
+    "insulin_resistance"
+   ],
+   "dose_g": [
+    6,
+    15
+   ],
+   "cautions": [],
+   "modern": "茯苓多糖在免疫与代谢方向有基础研究"
+  },
+  {
+   "name": "葛根",
+   "processing": "片",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、辛，凉",
+   "meridians": "脾、胃、肺经",
+   "functions": [
+    "解肌生津",
+    "升阳"
+   ],
+   "tags": [
+    "insulin_resistance",
+    "pancreas",
+    "liver_enzyme"
+   ],
+   "dose_g": [
+    6,
+    12
+   ],
+   "cautions": [
+    "胃寒者适量"
+   ],
+   "modern": "葛根素在糖脂代谢方向研究较多，均为辅助性证据"
+  },
+  {
+   "name": "陈皮",
+   "processing": "丝/块",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "苦、辛，温",
+   "meridians": "脾、肺经",
+   "functions": [
+    "理气健脾",
+    "燥湿化痰"
+   ],
+   "tags": [
+    "qi_stagnation",
+    "spleen_deficiency",
+    "damp"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "气虚津亏者适量"
+   ],
+   "modern": "橙皮苷等黄酮类为主要研究成分；可缓和整方对胃的刺激"
+  },
+  {
+   "name": "玫瑰花",
+   "processing": "重瓣红玫瑰干花",
+   "status": "药食同源目录（2014年试点，按属地公告核实）",
+   "nature": "甘、微苦，温",
+   "meridians": "肝、脾经",
+   "functions": [
+    "行气解郁",
+    "和血调经"
+   ],
+   "tags": [
+    "qi_stagnation",
+    "female_regulate"
+   ],
+   "dose_g": [
+    2,
+    5
+   ],
+   "cautions": [
+    "孕期是否饮用请咨询医师"
+   ],
+   "modern": "芳香类成分与情绪压力方向有初步研究；性温可中和方中微寒之品"
+  },
+  {
+   "name": "玉米须",
+   "processing": "干品",
+   "status": "保健食品原料目录",
+   "nature": "甘，平",
+   "meridians": "膀胱、肝、胆经",
+   "functions": [
+    "利水消肿"
+   ],
+   "tags": [
+    "edema",
+    "damp"
+   ],
+   "dose_g": [
+    6,
+    15
+   ],
+   "cautions": [],
+   "modern": "民间代茶常用；注意：常见于可用于保健食品的物品名单，未见于药食同源目录（以卫健委最新公告为准），涉及'全部目录内'宣称时应替换或如实标注"
+  },
+  {
+   "name": "赤小豆",
+   "processing": "打碎",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、酸，平",
+   "meridians": "心、小肠经",
+   "functions": [
+    "利水消肿",
+    "解毒排脓"
+   ],
+   "tags": [
+    "edema",
+    "damp"
+   ],
+   "dose_g": [
+    6,
+    15
+   ],
+   "cautions": [],
+   "modern": "膳食纤维与多酚类研究为主；作为玉米须的目录内替代利水食材"
+  },
+  {
+   "name": "薏苡仁",
+   "processing": "炒薏苡仁",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、淡，凉",
+   "meridians": "脾、胃、肺经",
+   "functions": [
+    "利水渗湿",
+    "健脾"
+   ],
+   "tags": [
+    "damp",
+    "edema",
+    "spleen_deficiency"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "孕妇慎用"
+   ],
+   "modern": "薏苡仁多糖/酯类有基础研究；孕期不宜"
+  },
+  {
+   "name": "菊花",
+   "processing": "干花",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、苦，微寒",
+   "meridians": "肺、肝经",
+   "functions": [
+    "平肝明目",
+    "疏散风热"
+   ],
+   "tags": [
+    "lipid"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "脾胃虚寒者适量"
+   ],
+   "modern": "黄酮类为主要研究成分"
+  },
+  {
+   "name": "桑叶",
+   "processing": "干品",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、苦，寒",
+   "meridians": "肺、肝经",
+   "functions": [
+    "疏散风热",
+    "清肝明目"
+   ],
+   "tags": [
+    "lipid",
+    "insulin_resistance"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "脾胃虚寒者适量"
+   ],
+   "modern": "1-脱氧野尻霉素（DNJ）在餐后血糖方向研究较多，均为辅助性证据"
+  },
+  {
+   "name": "枸杞子",
+   "processing": "枸杞子（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "肝、肾经",
+   "functions": [
+    "滋补肝肾",
+    "益精明目"
+   ],
+   "tags": [
+    "female_regulate"
+   ],
+   "dose_g": [
+    5,
+    10
+   ],
+   "cautions": [
+    "湿盛、便溏者适量"
+   ],
+   "modern": "枸杞多糖研究较多；痰湿盛者本方暂不选用"
+  },
+  {
+   "name": "莱菔子",
+   "processing": "炒",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛、甘，平",
+   "meridians": "脾、胃、肺经",
+   "functions": [
+    "消食除胀",
+    "降气化痰"
+   ],
+   "tags": [
+    "food_stagnation",
+    "damp"
+   ],
+   "dose_g": [
+    4,
+    9
+   ],
+   "cautions": [
+    "气虚者慎"
+   ],
+   "modern": "常与山楂、麦芽同用于食积"
+  },
+  {
+   "name": "麦芽",
+   "processing": "炒",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "脾、胃经",
+   "functions": [
+    "行气消食",
+    "健脾开胃"
+   ],
+   "tags": [
+    "food_stagnation",
+    "spleen_deficiency"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "哺乳期注意回乳作用"
+   ],
+   "modern": "消化酶类与食积方向研究为主"
+  },
+  {
+   "name": "甘草",
+   "processing": "片",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "心、肺、脾、胃经",
+   "functions": [
+    "补脾益气",
+    "调和诸药"
+   ],
+   "tags": [],
+   "dose_g": [
+    2,
+    5
+   ],
+   "cautions": [
+    "高血压、水肿者不宜大量或长期用"
+   ],
+   "modern": "甘草酸相关注意事项较明确：不宜大量久服"
+  },
+  {
+   "name": "酸枣仁",
+   "processing": "炒酸枣仁",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、酸，平",
+   "meridians": "肝、胆、心经",
+   "functions": [
+    "养心安神",
+    "敛汗"
+   ],
+   "tags": [
+    "insomnia",
+    "qi_deficiency"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "有滑肠作用，便溏者慎用",
+    "脾胃虚寒者建议炒制后使用"
+   ],
+   "modern": "传统安神代表药食两用品，现代研究多关注其黄酮苷类成分与睡眠质量的相关性"
+  },
+  {
+   "name": "百合",
+   "processing": "干百合",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，微寒",
+   "meridians": "心、肺经",
+   "functions": [
+    "养阴润肺",
+    "清心安神"
+   ],
+   "tags": [
+    "insomnia",
+    "throat"
+   ],
+   "dose_g": [
+    10,
+    20
+   ],
+   "cautions": [
+    "脾胃虚寒、便溏者慎用"
+   ],
+   "modern": "传统清心润燥食材，常用于虚烦不眠、干咳少痰等阴虚表现的食养搭配"
+  },
+  {
+   "name": "莲子",
+   "processing": "莲子（去心）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、涩，平",
+   "meridians": "脾、肾、心经",
+   "functions": [
+    "益肾固精",
+    "养心安神",
+    "补脾止泻"
+   ],
+   "tags": [
+    "insomnia",
+    "qi_deficiency"
+   ],
+   "dose_g": [
+    10,
+    20
+   ],
+   "cautions": [
+    "大便燥结者不宜多用"
+   ],
+   "modern": "莲子心另有清心作用但味极苦，本方仅取莲子肉，安神与健脾并重"
+  },
+  {
+   "name": "桂圆肉",
+   "processing": "桂圆肉（龙眼肉）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，温",
+   "meridians": "心、脾经",
+   "functions": [
+    "补益心脾",
+    "养血安神"
+   ],
+   "tags": [
+    "insomnia",
+    "qi_deficiency"
+   ],
+   "dose_g": [
+    6,
+    12
+   ],
+   "cautions": [
+    "性偏温，湿热重、易上火者慎用或减量",
+    "孕妇慎用大量"
+   ],
+   "modern": "传统补益食材，甘温助阳，常与偏凉安神品配伍以防温燥"
+  },
+  {
+   "name": "淡竹叶",
+   "processing": "淡竹叶",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、淡，寒",
+   "meridians": "心、胃、小肠经",
+   "functions": [
+    "清热除烦",
+    "利尿"
+   ],
+   "tags": [
+    "insomnia",
+    "throat"
+   ],
+   "dose_g": [
+    6,
+    10
+   ],
+   "cautions": [
+    "性寒，脾胃虚寒、夜尿频者慎用"
+   ],
+   "modern": "清心除烦代表食材，常与温性安神品配伍制衡，兼顾夜间烦躁与咽干"
+  },
+  {
+   "name": "桔梗",
+   "processing": "桔梗",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "苦、辛，平",
+   "meridians": "肺经",
+   "functions": [
+    "宣肺祛痰",
+    "利咽"
+   ],
+   "tags": [
+    "throat"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "用量宜小，过量易致恶心；咯血者慎用"
+   ],
+   "modern": "传统利咽要药，现代常见于润喉类食养组合"
+  },
+  {
+   "name": "胖大海",
+   "processing": "胖大海",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，寒",
+   "meridians": "肺、大肠经",
+   "functions": [
+    "清热利咽",
+    "润肠通便"
+   ],
+   "tags": [
+    "throat"
+   ],
+   "dose_g": [
+    2,
+    4
+   ],
+   "cautions": [
+    "性寒质滑，脾胃虚寒、大便溏泄者不宜",
+    "不宜长期连续大量使用"
+   ],
+   "modern": "民间常用润喉代茶品，本方控制在小剂量、短周期使用"
+  },
+  {
+   "name": "金银花",
+   "processing": "金银花",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，寒",
+   "meridians": "肺、心、胃经",
+   "functions": [
+    "清热解毒",
+    "疏散风热"
+   ],
+   "tags": [
+    "throat"
+   ],
+   "dose_g": [
+    5,
+    10
+   ],
+   "cautions": [
+    "性寒，脾胃虚寒、素体畏寒者慎用或减量"
+   ],
+   "modern": "清热解毒代表药食两用品，常用于咽喉不适方向的食养搭配"
+  },
+  {
+   "name": "薄荷",
+   "processing": "薄荷",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，凉",
+   "meridians": "肺、肝经",
+   "functions": [
+    "疏散风热",
+    "利咽",
+    "疏肝"
+   ],
+   "tags": [
+    "throat"
+   ],
+   "dose_g": [
+    2,
+    4
+   ],
+   "cautions": [
+    "后下（冲泡后期加入）避免久煮走味",
+    "阴虚血燥、表虚多汗者慎用"
+   ],
+   "modern": "含挥发性成分，宜后下冲泡；兼具疏肝功用，与肝系方向可协同"
+  },
+  {
+   "name": "罗汉果",
+   "processing": "罗汉果（切片）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，凉",
+   "meridians": "肺、大肠经",
+   "functions": [
+    "清肺利咽",
+    "润肠通便"
+   ],
+   "tags": [
+    "throat"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "脾胃虚寒、大便溏泄者慎用"
+   ],
+   "modern": "甘味主要来自罗汉果苷，甜度高但传统认为其性质与蔗糖升糖效应不同，血糖异常者仍建议控制单日总量并观察"
+  },
+  {
+   "name": "黄芪",
+   "processing": "黄芪（试点/增补目录，按最新公告使用）",
+   "status": "药食同源目录（2019年试点转正）",
+   "nature": "甘，微温",
+   "meridians": "脾、肺经",
+   "functions": [
+    "补气升阳",
+    "益卫固表",
+    "利水消肿"
+   ],
+   "tags": [
+    "qi_deficiency"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "表实邪盛、阴虚阳亢、疮痈初起或溃后热毒尚盛者不宜",
+    "感冒发热期间暂停"
+   ],
+   "modern": "补气代表药食两用品，2019 年后纳入按照传统既是食品又是中药材试点目录，使用前请核对属地最新公告是否已放开"
+  },
+  {
+   "name": "党参",
+   "processing": "党参（试点/增补目录，按最新公告使用）",
+   "status": "药食同源目录（2019年试点转正）",
+   "nature": "甘，平",
+   "meridians": "脾、肺经",
+   "functions": [
+    "健脾益肺",
+    "养血生津"
+   ],
+   "tags": [
+    "qi_deficiency"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "里实热证者不宜",
+    "不宜与藜芦同用"
+   ],
+   "modern": "性质平和的补气品，常替代药性较峻的人参用于食养场景，同为试点/增补目录品种，请核对属地最新公告"
+  },
+  {
+   "name": "山药",
+   "processing": "炒山药",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "脾、肺、肾经",
+   "functions": [
+    "益气养阴",
+    "补脾肺肾"
+   ],
+   "tags": [
+    "qi_deficiency",
+    "glucose"
+   ],
+   "dose_g": [
+    10,
+    20
+   ],
+   "cautions": [
+    "湿盛中满、大便燥结者慎用"
+   ],
+   "modern": "药性平和，补而不腻，常用于气虚兼顾脾胃与糖代谢方向的搭配"
+  },
+  {
+   "name": "大枣",
+   "processing": "大枣（去核）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，温",
+   "meridians": "脾、胃经",
+   "functions": [
+    "补中益气",
+    "养血安神"
+   ],
+   "tags": [
+    "qi_deficiency",
+    "insomnia"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "湿盛脘腹胀满、痰热咳嗽者不宜",
+    "糖代谢异常者控制用量"
+   ],
+   "modern": "含糖量较高，血糖偏高人群建议减量或去之，本方按标签联动智能规避（见槽位说明）"
+  },
+  {
+   "name": "西洋参",
+   "processing": "西洋参片",
+   "status": "药食同源目录（2019年试点转正）",
+   "nature": "甘、微苦，凉",
+   "meridians": "心、肺、肾经",
+   "functions": [
+    "补气养阴",
+    "清热生津"
+   ],
+   "tags": [
+    "qi_deficiency"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "中阳虚衰、胃有寒湿者不宜"
+   ],
+   "modern": "性偏凉，补气同时兼清虚热，适合气阴两虚而不宜温补者"
+  },
+  {
+   "name": "灵芝",
+   "processing": "灵芝片",
+   "status": "药食同源目录（2019年试点转正）",
+   "nature": "甘，平",
+   "meridians": "心、肺、肝、脾经",
+   "functions": [
+    "补气安神",
+    "止咳平喘"
+   ],
+   "tags": [
+    "qi_deficiency",
+    "insomnia"
+   ],
+   "dose_g": [
+    6,
+    12
+   ],
+   "cautions": [
+    "实证、感冒发热期间不宜",
+    "个别人群饮用后可能出现口干，减量观察"
+   ],
+   "modern": "传统扶正代表品，同时兼顾气虚与安神两个方向"
+  },
+  {
+   "name": "茯神",
+   "processing": "茯神",
+   "status": "目录收录名为茯苓（茯神为茯苓抱木部分，按属地口径核实）",
+   "nature": "甘、淡，平",
+   "meridians": "心、脾经",
+   "functions": [
+    "宁心安神",
+    "健脾利水"
+   ],
+   "tags": [
+    "insomnia"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "性质平和，罕见明显禁忌；虚寒滑精者慎用"
+   ],
+   "modern": "茯苓抱松根者，安神力更专；官方目录文字仅载「茯苓」，茯神能否按药食同源使用存在口径差异，本系统按合规基线不将其视为目录内品种，失眠方向以酸枣仁为主"
+  },
+  {
+   "name": "生姜",
+   "processing": "生姜片",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，微温",
+   "meridians": "肺、脾、胃经",
+   "functions": [
+    "温中散寒",
+    "解表",
+    "降逆止呕"
+   ],
+   "tags": [
+    "food_stagnation"
+   ],
+   "dose_g": [
+    2,
+    5
+   ],
+   "cautions": [
+    "阴虚内热、素体易上火者慎用",
+    "不宜夜间大量服用（民间有此类说法，仅供参考）"
+   ],
+   "modern": "温中和胃常用品，本方限小剂量用于配伍制衡偏寒之品"
+  },
+  {
+   "name": "佛手",
+   "processing": "佛手片",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛、苦、酸，温",
+   "meridians": "肝、脾、胃经",
+   "functions": [
+    "疏肝理气",
+    "和胃止痛"
+   ],
+   "tags": [
+    "qi_deficiency",
+    "food_stagnation"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "阴虚有火、无气滞者不宜多用"
+   ],
+   "modern": "疏肝理气代表品，适合情志不畅兼脾胃气滞者"
+  },
+  {
+   "name": "玉竹",
+   "processing": "玉竹片",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，微寒",
+   "meridians": "肺、胃经",
+   "functions": [
+    "养阴润燥",
+    "生津止渴"
+   ],
+   "tags": [
+    "yin_deficiency",
+    "throat",
+    "glucose"
+   ],
+   "dose_g": [
+    6,
+    12
+   ],
+   "cautions": [
+    "脾虚便溏、痰湿内盛者慎用"
+   ],
+   "modern": "滋阴代表食材，含甾体皂苷与多糖，常用于口干咽燥方向食养"
+  },
+  {
+   "name": "黄精",
+   "processing": "酒黄精/蒸黄精",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "脾、肺、肾经",
+   "functions": [
+    "补气养阴",
+    "健脾润肺益肾"
+   ],
+   "tags": [
+    "yin_deficiency",
+    "qi_deficiency"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "中寒泄泻、痰湿痞满者不宜",
+    "生品刺激咽喉，须用炮制品"
+   ],
+   "modern": "气阴双补，须用蒸制/酒制品，生黄精有麻舌刺激"
+  },
+  {
+   "name": "桑椹",
+   "processing": "干桑椹",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、酸，寒",
+   "meridians": "心、肝、肾经",
+   "functions": [
+    "滋阴补血",
+    "生津润燥"
+   ],
+   "tags": [
+    "yin_deficiency",
+    "insomnia"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "脾胃虚寒便溏者慎用",
+    "含糖较高，血糖异常者控制用量"
+   ],
+   "modern": "滋阴养血食材，花青素含量高"
+  },
+  {
+   "name": "黑芝麻",
+   "processing": "炒黑芝麻",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "肝、肾、大肠经",
+   "functions": [
+    "补肝肾",
+    "益精血",
+    "润肠燥"
+   ],
+   "tags": [
+    "yin_deficiency",
+    "constipation"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "便溏者慎用",
+    "油脂含量高，控制总量"
+   ],
+   "modern": "补益肝肾常用食材，宜炒香碾碎后利用率更高"
+  },
+  {
+   "name": "覆盆子",
+   "processing": "覆盆子",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、酸，温",
+   "meridians": "肝、肾、膀胱经",
+   "functions": [
+    "益肾固精缩尿",
+    "养肝明目"
+   ],
+   "tags": [
+    "qi_deficiency"
+   ],
+   "dose_g": [
+    6,
+    12
+   ],
+   "cautions": [
+    "肾虚有火、小便短赤者慎用"
+   ],
+   "modern": "固涩类药食两用品"
+  },
+  {
+   "name": "余甘子",
+   "processing": "余甘子（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、酸、涩，凉",
+   "meridians": "肺、胃经",
+   "functions": [
+    "清热凉血",
+    "消食健胃",
+    "生津止咳"
+   ],
+   "tags": [
+    "throat",
+    "food_stagnation"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "脾胃虚寒者慎用"
+   ],
+   "modern": "即油柑，维生素C丰富，藏族习用药材，咽喉与消食方向"
+  },
+  {
+   "name": "白扁豆",
+   "processing": "炒白扁豆",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，微温",
+   "meridians": "脾、胃经",
+   "functions": [
+    "健脾化湿",
+    "和中消暑"
+   ],
+   "tags": [
+    "spleen_deficiency",
+    "damp",
+    "summer_damp"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "须充分加热，生品含凝集素"
+   ],
+   "modern": "健脾化湿代表食材，生品有毒须炒制或煮透"
+  },
+  {
+   "name": "白扁豆花",
+   "processing": "白扁豆花",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "脾、胃经",
+   "functions": [
+    "解暑化湿",
+    "和中健脾"
+   ],
+   "tags": [
+    "summer_damp",
+    "spleen_deficiency"
+   ],
+   "dose_g": [
+    5,
+    9
+   ],
+   "cautions": [
+    "无明显禁忌，体质虚寒者适量"
+   ],
+   "modern": "夏季暑湿方向常用花类食材"
+  },
+  {
+   "name": "芡实",
+   "processing": "炒芡实",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、涩，平",
+   "meridians": "脾、肾经",
+   "functions": [
+    "益肾固精",
+    "补脾止泻",
+    "除湿止带"
+   ],
+   "tags": [
+    "spleen_deficiency",
+    "damp"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "大小便不利者慎用",
+    "收涩之品，外感期间不宜"
+   ],
+   "modern": "健脾固涩食材，常与莲子薏苡仁配伍"
+  },
+  {
+   "name": "火麻仁",
+   "processing": "炒火麻仁（碾碎）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "脾、胃、大肠经",
+   "functions": [
+    "润肠通便"
+   ],
+   "tags": [
+    "constipation"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "便溏者禁用",
+    "不宜过量（大量可致不适）",
+    "孕妇慎用"
+   ],
+   "modern": "润下代表药食两用品，脂肪油润肠"
+  },
+  {
+   "name": "郁李仁",
+   "processing": "郁李仁（捣碎）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛、苦、甘，平",
+   "meridians": "脾、大肠、小肠经",
+   "functions": [
+    "润肠通便",
+    "下气利水"
+   ],
+   "tags": [
+    "constipation",
+    "edema"
+   ],
+   "dose_g": [
+    6,
+    9
+   ],
+   "cautions": [
+    "孕妇慎用",
+    "便溏者禁用"
+   ],
+   "modern": "润下行气，力较火麻仁稍峻，小量入方"
+  },
+  {
+   "name": "蜂蜜",
+   "processing": "蜂蜜（冲调）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "肺、脾、大肠经",
+   "functions": [
+    "补中润燥",
+    "止痛解毒",
+    "润肠"
+   ],
+   "tags": [
+    "constipation",
+    "throat"
+   ],
+   "dose_g": [
+    15,
+    30
+   ],
+   "cautions": [
+    "1 岁以下婴儿禁用（肉毒杆菌风险）",
+    "糖尿病/血糖异常者规避",
+    "湿阻中满、便溏者不宜",
+    "不可高温久煮，温水冲调"
+   ],
+   "modern": "润燥佐剂，温水冲入成品茶饮，不与药材同煮"
+  },
+  {
+   "name": "蒲公英",
+   "processing": "蒲公英（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "苦、甘，寒",
+   "meridians": "肝、胃经",
+   "functions": [
+    "清热解毒",
+    "消肿散结",
+    "利湿通淋"
+   ],
+   "tags": [
+    "damp_heat",
+    "liver_enzyme"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "脾胃虚寒、便溏者慎用",
+    "过量可致缓泻"
+   ],
+   "modern": "清热解毒代表野菜类药食两用品，湿热方向常用"
+  },
+  {
+   "name": "栀子",
+   "processing": "炒栀子",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "苦，寒",
+   "meridians": "心、肺、三焦经",
+   "functions": [
+    "泻火除烦",
+    "清热利湿",
+    "凉血"
+   ],
+   "tags": [
+    "damp_heat",
+    "insomnia"
+   ],
+   "dose_g": [
+    5,
+    9
+   ],
+   "cautions": [
+    "脾虚便溏者禁用",
+    "苦寒败胃，中病即止"
+   ],
+   "modern": "清泻三焦火热，炒制后苦寒之性稍缓"
+  },
+  {
+   "name": "鱼腥草",
+   "processing": "鱼腥草（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，微寒",
+   "meridians": "肺经",
+   "functions": [
+    "清热解毒",
+    "消痈排脓",
+    "利尿通淋"
+   ],
+   "tags": [
+    "damp_heat",
+    "cough"
+   ],
+   "dose_g": [
+    15,
+    25
+   ],
+   "cautions": [
+    "虚寒证者慎用",
+    "不宜久煎，含挥发油"
+   ],
+   "modern": "清肺热常用，鲜品加倍；不宜久煮"
+  },
+  {
+   "name": "小蓟",
+   "processing": "小蓟（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、苦，凉",
+   "meridians": "心、肝经",
+   "functions": [
+    "凉血止血",
+    "散瘀解毒消痈"
+   ],
+   "tags": [
+    "damp_heat"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "脾胃虚寒、无瘀滞者慎用"
+   ],
+   "modern": "凉血类野菜药食两用品"
+  },
+  {
+   "name": "马齿苋",
+   "processing": "马齿苋（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "酸，寒",
+   "meridians": "肝、大肠经",
+   "functions": [
+    "清热解毒",
+    "凉血止痢"
+   ],
+   "tags": [
+    "damp_heat"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "脾胃虚寒、便溏者禁用",
+    "孕妇禁用（滑利）"
+   ],
+   "modern": "清肠热常用野菜，孕妇忌"
+  },
+  {
+   "name": "鲜白茅根",
+   "processing": "白茅根（干品可代）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，寒",
+   "meridians": "肺、胃、膀胱经",
+   "functions": [
+    "凉血止血",
+    "清热利尿",
+    "生津"
+   ],
+   "tags": [
+    "damp_heat",
+    "urate"
+   ],
+   "dose_g": [
+    15,
+    30
+   ],
+   "cautions": [
+    "脾胃虚寒、溲多不渴者忌"
+   ],
+   "modern": "清热利尿生津，鲜品效佳，干品用量减半计"
+  },
+  {
+   "name": "鲜芦根",
+   "processing": "芦根（干品可代）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，寒",
+   "meridians": "肺、胃经",
+   "functions": [
+    "清热泻火",
+    "生津止渴",
+    "除烦止呕"
+   ],
+   "tags": [
+    "throat",
+    "wind_heat",
+    "glucose"
+   ],
+   "dose_g": [
+    15,
+    30
+   ],
+   "cautions": [
+    "脾胃虚寒者忌"
+   ],
+   "modern": "清肺胃热生津，风热咽干常用"
+  },
+  {
+   "name": "青果",
+   "processing": "青果（橄榄）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、酸，平",
+   "meridians": "肺、胃经",
+   "functions": [
+    "清热解毒",
+    "利咽生津"
+   ],
+   "tags": [
+    "throat"
+   ],
+   "dose_g": [
+    5,
+    10
+   ],
+   "cautions": [
+    "脾胃虚寒者适量"
+   ],
+   "modern": "即橄榄，利咽生津经典果类"
+  },
+  {
+   "name": "槐花",
+   "processing": "炒槐花",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "苦，微寒",
+   "meridians": "肝、大肠经",
+   "functions": [
+    "凉血止血",
+    "清肝泻火"
+   ],
+   "tags": [
+    "blood_pressure",
+    "damp_heat"
+   ],
+   "dose_g": [
+    5,
+    9
+   ],
+   "cautions": [
+    "脾胃虚寒者慎用",
+    "孕妇慎用"
+   ],
+   "modern": "芦丁含量高，血压与凉血方向食养参考"
+  },
+  {
+   "name": "槐米",
+   "processing": "炒槐米",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "苦，微寒",
+   "meridians": "肝、大肠经",
+   "functions": [
+    "凉血止血",
+    "清肝泻火"
+   ],
+   "tags": [
+    "blood_pressure",
+    "damp_heat"
+   ],
+   "dose_g": [
+    5,
+    9
+   ],
+   "cautions": [
+    "同槐花"
+   ],
+   "modern": "槐树花蕾，芦丁更高，与槐花同功"
+  },
+  {
+   "name": "菊苣",
+   "processing": "菊苣（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "微苦、咸，凉",
+   "meridians": "肝、胆、胃经",
+   "functions": [
+    "清肝利胆",
+    "健胃消食",
+    "利尿消肿"
+   ],
+   "tags": [
+    "urate",
+    "damp_heat",
+    "food_stagnation"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "脾胃虚寒者慎用"
+   ],
+   "modern": "维吾尔族习用药材，现代尿酸方向研究较多"
+  },
+  {
+   "name": "淡豆豉",
+   "processing": "淡豆豉",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "苦、辛，凉",
+   "meridians": "肺、胃经",
+   "functions": [
+    "解表除烦",
+    "宣发郁热"
+   ],
+   "tags": [
+    "wind_heat",
+    "insomnia"
+   ],
+   "dose_g": [
+    6,
+    12
+   ],
+   "cautions": [
+    "无明显禁忌，胃虚易泛恶者少用"
+   ],
+   "modern": "发酵豆制品，风热初起与虚烦不眠（栀子豉汤思路）常用"
+  },
+  {
+   "name": "乌梅",
+   "processing": "乌梅",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "酸、涩，平",
+   "meridians": "肝、脾、肺、大肠经",
+   "functions": [
+    "敛肺止咳",
+    "涩肠止泻",
+    "生津止渴"
+   ],
+   "tags": [
+    "throat",
+    "glucose",
+    "cough"
+   ],
+   "dose_g": [
+    6,
+    12
+   ],
+   "cautions": [
+    "外感咳嗽初起、实热积滞者不宜",
+    "胃酸过多者慎用"
+   ],
+   "modern": "生津敛肺经典，酸梅汤主料"
+  },
+  {
+   "name": "木瓜",
+   "processing": "宣木瓜（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "酸，温",
+   "meridians": "肝、脾经",
+   "functions": [
+    "舒筋活络",
+    "和胃化湿"
+   ],
+   "tags": [
+    "damp"
+   ],
+   "dose_g": [
+    6,
+    9
+   ],
+   "cautions": [
+    "内有郁热、小便短赤者慎用",
+    "胃酸过多者慎用"
+   ],
+   "modern": "此为蔷薇科宣木瓜（药用），非番木瓜"
+  },
+  {
+   "name": "枳椇子",
+   "processing": "枳椇子",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "胃经",
+   "functions": [
+    "解酒毒",
+    "止渴除烦"
+   ],
+   "tags": [
+    "liver_enzyme",
+    "damp_heat"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "脾胃虚寒者慎用"
+   ],
+   "modern": "传统解酒食材，酒后不适与肝负担方向食养参考（不等于解酒护肝药效承诺）"
+  },
+  {
+   "name": "沙棘",
+   "processing": "沙棘（干果）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "酸、涩，温",
+   "meridians": "脾、胃、肺、心经",
+   "functions": [
+    "健脾消食",
+    "止咳祛痰",
+    "活血散瘀"
+   ],
+   "tags": [
+    "food_stagnation",
+    "cough",
+    "lipid"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "胃酸过多者慎用"
+   ],
+   "modern": "蒙藏习用药材，维生素与黄酮丰富"
+  },
+  {
+   "name": "杏仁（甜）",
+   "processing": "甜杏仁（南杏仁）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "肺、大肠经",
+   "functions": [
+    "润肺止咳",
+    "润肠通便"
+   ],
+   "tags": [
+    "cough",
+    "constipation"
+   ],
+   "dose_g": [
+    5,
+    10
+   ],
+   "cautions": [
+    "本方仅用甜杏仁；苦杏仁含苦杏仁苷有毒，严禁直接泡饮",
+    "婴幼儿慎用整粒（呛噎风险）"
+   ],
+   "modern": "官方目录收录为「杏仁（甜、苦）」；苦杏仁须炮制去毒且入煎剂，代茶饮场景一律只用甜杏仁"
+  },
+  {
+   "name": "紫苏",
+   "processing": "紫苏叶（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，温",
+   "meridians": "肺、脾经",
+   "functions": [
+    "解表散寒",
+    "行气和胃"
+   ],
+   "tags": [
+    "cough",
+    "food_stagnation"
+   ],
+   "dose_g": [
+    5,
+    9
+   ],
+   "cautions": [
+    "温病及气弱表虚者慎用",
+    "不宜久煮（挥发油）"
+   ],
+   "modern": "风寒表证与鱼蟹不适传统用材，后下冲泡"
+  },
+  {
+   "name": "紫苏籽",
+   "processing": "炒紫苏籽",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，温",
+   "meridians": "肺经",
+   "functions": [
+    "降气化痰",
+    "止咳平喘",
+    "润肠"
+   ],
+   "tags": [
+    "cough",
+    "constipation"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "气虚久嗽、脾虚便溏者慎用"
+   ],
+   "modern": "α-亚麻酸含量高的油料籽实"
+  },
+  {
+   "name": "橘红",
+   "processing": "橘红",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛、苦，温",
+   "meridians": "肺、脾经",
+   "functions": [
+    "理气宽中",
+    "燥湿化痰"
+   ],
+   "tags": [
+    "cough",
+    "food_stagnation"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "阴虚燥咳、久嗽气虚者不宜"
+   ],
+   "modern": "橘皮外层红色部分，化痰力较陈皮强"
+  },
+  {
+   "name": "薤白",
+   "processing": "薤白（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛、苦，温",
+   "meridians": "心、肺、胃、大肠经",
+   "functions": [
+    "通阳散结",
+    "行气导滞"
+   ],
+   "tags": [
+    "qi_stagnation",
+    "lipid"
+   ],
+   "dose_g": [
+    5,
+    9
+   ],
+   "cautions": [
+    "气虚无滞、阴虚发热者慎用",
+    "胃弱者易泛酸"
+   ],
+   "modern": "即小根蒜，胸痹食养经典（瓜蒌薤白思路），入方须小量"
+  },
+  {
+   "name": "藿香",
+   "processing": "广藿香/藿香（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，微温",
+   "meridians": "脾、胃、肺经",
+   "functions": [
+    "芳香化浊",
+    "和中止呕",
+    "发表解暑"
+   ],
+   "tags": [
+    "summer_damp",
+    "damp"
+   ],
+   "dose_g": [
+    5,
+    9
+   ],
+   "cautions": [
+    "阴虚火旺者慎用",
+    "不宜久煎"
+   ],
+   "modern": "暑湿季节代表用材，后下冲泡"
+  },
+  {
+   "name": "香薷",
+   "processing": "香薷（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，微温",
+   "meridians": "肺、胃经",
+   "functions": [
+    "发汗解表",
+    "化湿和中",
+    "利水消肿"
+   ],
+   "tags": [
+    "summer_damp",
+    "edema"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "表虚多汗者禁用",
+    "「夏月麻黄」发散力较强，量宜小"
+   ],
+   "modern": "暑天感寒饮冷所致不适的传统用材"
+  },
+  {
+   "name": "白芷",
+   "processing": "白芷片",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，温",
+   "meridians": "胃、大肠、肺经",
+   "functions": [
+    "解表散寒",
+    "祛风止痛",
+    "通鼻窍"
+   ],
+   "tags": [
+    "wind_cold"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "阴虚血热者忌",
+    "光敏成分，大量长期不宜"
+   ],
+   "modern": "风寒头面不适方向，亦为常用香料"
+  },
+  {
+   "name": "香橼",
+   "processing": "香橼片",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛、苦、酸，温",
+   "meridians": "肝、脾、肺经",
+   "functions": [
+    "疏肝理气",
+    "宽中化痰"
+   ],
+   "tags": [
+    "qi_stagnation",
+    "food_stagnation"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "阴虚血燥、气虚者慎用"
+   ],
+   "modern": "与佛手同科同功，理气不峻"
+  },
+  {
+   "name": "代代花",
+   "processing": "代代花",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、微苦，平",
+   "meridians": "肝、胃经",
+   "functions": [
+    "疏肝和胃",
+    "理气解郁"
+   ],
+   "tags": [
+    "qi_stagnation",
+    "female_regulate"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "孕妇慎用"
+   ],
+   "modern": "花类理气食材，情志不畅方向常与玫瑰花配伍"
+  },
+  {
+   "name": "刀豆",
+   "processing": "刀豆（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，温",
+   "meridians": "胃、肾经",
+   "functions": [
+    "温中下气",
+    "止呃"
+   ],
+   "tags": [
+    "spleen_deficiency"
+   ],
+   "dose_g": [
+    6,
+    9
+   ],
+   "cautions": [
+    "胃热盛者慎用",
+    "须煮透"
+   ],
+   "modern": "温中降逆食材"
+  },
+  {
+   "name": "益智仁",
+   "processing": "盐益智仁",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，温",
+   "meridians": "脾、肾经",
+   "functions": [
+    "暖肾固精缩尿",
+    "温脾止泻摄唾"
+   ],
+   "tags": [
+    "qi_deficiency"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "阴虚火旺、因热尿频者禁用"
+   ],
+   "modern": "温补固摄类，夜尿多方向食养参考"
+  },
+  {
+   "name": "肉豆蔻",
+   "processing": "煨肉豆蔻",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，温",
+   "meridians": "脾、胃、大肠经",
+   "functions": [
+    "温中行气",
+    "涩肠止泻"
+   ],
+   "tags": [
+    "seasoning"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "湿热泻痢者忌",
+    "过量有神经毒性风险（肉豆蔻醚），严格控量",
+    "不入代茶饮，作膳食香料"
+   ],
+   "modern": "香料类收录；生品刺激须煨制，本系统不将其列入茶方候选"
+  },
+  {
+   "name": "丁香",
+   "processing": "公丁香",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，温",
+   "meridians": "脾、胃、肺、肾经",
+   "functions": [
+    "温中降逆",
+    "补肾助阳"
+   ],
+   "tags": [
+    "seasoning"
+   ],
+   "dose_g": [
+    1,
+    3
+   ],
+   "cautions": [
+    "热证及阴虚内热者忌",
+    "不宜与郁金同用（十九畏）",
+    "不入代茶饮主方，作香料"
+   ],
+   "modern": "香料类收录，丁香酚含量高，用量极小"
+  },
+  {
+   "name": "八角茴香",
+   "processing": "八角",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，温",
+   "meridians": "肝、肾、脾、胃经",
+   "functions": [
+    "温阳散寒",
+    "理气止痛"
+   ],
+   "tags": [
+    "seasoning"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "阴虚火旺者慎",
+    "不入代茶饮，作香料"
+   ],
+   "modern": "香料类收录"
+  },
+  {
+   "name": "小茴香",
+   "processing": "炒小茴香",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，温",
+   "meridians": "肝、肾、脾、胃经",
+   "functions": [
+    "散寒止痛",
+    "理气和胃"
+   ],
+   "tags": [
+    "seasoning",
+    "qi_stagnation"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "阴虚火旺者慎用",
+    "不入代茶饮主方"
+   ],
+   "modern": "香料类收录，脘腹冷痛方向传统用材"
+  },
+  {
+   "name": "花椒",
+   "processing": "花椒",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，温",
+   "meridians": "脾、胃、肾经",
+   "functions": [
+    "温中止痛",
+    "杀虫止痒"
+   ],
+   "tags": [
+    "seasoning"
+   ],
+   "dose_g": [
+    1,
+    3
+   ],
+   "cautions": [
+    "阴虚火旺者忌",
+    "孕妇慎用",
+    "不入代茶饮，作香料"
+   ],
+   "modern": "香料类收录"
+  },
+  {
+   "name": "黑胡椒",
+   "processing": "黑胡椒",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，热",
+   "meridians": "胃、大肠经",
+   "functions": [
+    "温中散寒",
+    "下气消痰"
+   ],
+   "tags": [
+    "seasoning"
+   ],
+   "dose_g": [
+    1,
+    3
+   ],
+   "cautions": [
+    "热证忌用",
+    "不入代茶饮，作香料"
+   ],
+   "modern": "香料类收录"
+  },
+  {
+   "name": "肉桂",
+   "processing": "肉桂",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛、甘，大热",
+   "meridians": "肾、脾、心、肝经",
+   "functions": [
+    "补火助阳",
+    "散寒止痛",
+    "温通经脉"
+   ],
+   "tags": [
+    "seasoning"
+   ],
+   "dose_g": [
+    1,
+    4
+   ],
+   "cautions": [
+    "阴虚火旺、里有实热者忌",
+    "孕妇慎用",
+    "有出血倾向者慎用",
+    "大热之品不入本系统代茶饮"
+   ],
+   "modern": "香料/温里类收录；血糖方向有研究但个体差异大，本系统不作宣称"
+  },
+  {
+   "name": "干姜",
+   "processing": "干姜",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，热",
+   "meridians": "脾、胃、肾、心、肺经",
+   "functions": [
+    "温中散寒",
+    "回阳通脉",
+    "温肺化饮"
+   ],
+   "tags": [
+    "seasoning",
+    "wind_cold"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "阴虚内热、血热者忌",
+    "孕妇慎用",
+    "本系统茶方以生姜小量代之"
+   ],
+   "modern": "温里类收录，热性强于生姜"
+  },
+  {
+   "name": "高良姜",
+   "processing": "高良姜",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，热",
+   "meridians": "脾、胃经",
+   "functions": [
+    "温胃止呕",
+    "散寒止痛"
+   ],
+   "tags": [
+    "seasoning"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "胃热者忌",
+    "不入代茶饮，作香料"
+   ],
+   "modern": "香料类收录"
+  },
+  {
+   "name": "砂仁",
+   "processing": "砂仁（打碎后下）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，温",
+   "meridians": "脾、胃、肾经",
+   "functions": [
+    "化湿开胃",
+    "温脾止泻",
+    "理气安胎"
+   ],
+   "tags": [
+    "seasoning",
+    "spleen_deficiency"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "阴虚血燥者慎用",
+    "不宜久煎"
+   ],
+   "modern": "芳香化湿类，本系统作可选香料标注，不入默认茶方"
+  },
+  {
+   "name": "黄芥子",
+   "processing": "炒黄芥子",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "辛，温",
+   "meridians": "肺经",
+   "functions": [
+    "温肺豁痰",
+    "散结通络"
+   ],
+   "tags": [
+    "seasoning"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "肺虚久咳、阴虚火旺者忌",
+    "对皮肤黏膜有刺激，不入代茶饮"
+   ],
+   "modern": "外用为主的辛温之品，目录收录但不入茶方"
+  },
+  {
+   "name": "榧子",
+   "processing": "炒榧子",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "肺、胃、大肠经",
+   "functions": [
+    "杀虫消积",
+    "润肠通便",
+    "润肺止咳"
+   ],
+   "tags": [
+    "constipation"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "便溏者慎用",
+    "不宜与绿豆同食（传统说法，供参考）"
+   ],
+   "modern": "坚果类药食两用品"
+  },
+  {
+   "name": "白果",
+   "processing": "熟白果（去芯）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘、苦、涩，平",
+   "meridians": "肺、肾经",
+   "functions": [
+    "敛肺定喘",
+    "止带缩尿"
+   ],
+   "tags": [
+    "toxic_caution",
+    "cough"
+   ],
+   "dose_g": [
+    5,
+    9
+   ],
+   "cautions": [
+    "有毒：生食或过量可致中毒（白果酸/氰苷），必须熟制去芯、严格限量",
+    "儿童尤须谨慎",
+    "本系统不将白果列入代茶饮候选"
+   ],
+   "modern": "银杏种仁；毒性明确，目录收录但绝不入泡饮方"
+  },
+  {
+   "name": "桃仁",
+   "processing": "燀桃仁",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "苦、甘，平",
+   "meridians": "心、肝、大肠经",
+   "functions": [
+    "活血祛瘀",
+    "润肠通便",
+    "止咳平喘"
+   ],
+   "tags": [
+    "toxic_caution",
+    "blood_stasis",
+    "constipation"
+   ],
+   "dose_g": [
+    5,
+    9
+   ],
+   "cautions": [
+    "有小毒（苦杏仁苷）",
+    "孕妇禁用",
+    "便溏者慎用",
+    "本系统不将桃仁列入代茶饮候选，血瘀方向以玫瑰花、山楂等平和之品替代"
+   ],
+   "modern": "活血化瘀经典药，因孕妇禁忌与小毒属性不入本系统茶方"
+  },
+  {
+   "name": "鸡内金",
+   "processing": "炒鸡内金（研末）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "脾、胃、小肠、膀胱经",
+   "functions": [
+    "健胃消食",
+    "涩精止遗",
+    "通淋化石"
+   ],
+   "tags": [
+    "food_stagnation",
+    "animal"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "脾虚无积滞者少用"
+   ],
+   "modern": "动物来源（鸡肫内壁），消食化积力强；研末冲服为宜，本系统茶方以植物类消食药为主"
+  },
+  {
+   "name": "昆布",
+   "processing": "昆布（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "咸，寒",
+   "meridians": "肝、胃、肾经",
+   "functions": [
+    "消痰软坚",
+    "利水消肿"
+   ],
+   "tags": [
+    "edema",
+    "lipid"
+   ],
+   "dose_g": [
+    6,
+    12
+   ],
+   "cautions": [
+    "脾胃虚寒者慎用",
+    "甲状腺疾病患者碘摄入须遵医嘱，本系统不将其入方"
+   ],
+   "modern": "海藻类，碘含量高；甲状腺相关人群风险明确，目录收录但不入茶方候选"
+  },
+  {
+   "name": "牡蛎",
+   "processing": "煅牡蛎",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "咸，微寒",
+   "meridians": "肝、胆、肾经",
+   "functions": [
+    "重镇安神",
+    "潜阳补阴",
+    "软坚散结"
+   ],
+   "tags": [
+    "animal"
+   ],
+   "dose_g": [
+    9,
+    30
+   ],
+   "cautions": [
+    "须先煎久煎，不适合冲泡"
+   ],
+   "modern": "贝壳类矿物性药材，代茶饮工艺不适用，收录不入方"
+  },
+  {
+   "name": "阿胶",
+   "processing": "阿胶（烊化）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "肺、肝、肾经",
+   "functions": [
+    "补血滋阴",
+    "润燥止血"
+   ],
+   "tags": [
+    "animal"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "脾胃虚弱、消化不良者慎用",
+    "感冒期间不宜"
+   ],
+   "modern": "驴皮胶，须烊化兑服，不适合冲泡工艺，收录不入方"
+  },
+  {
+   "name": "乌梢蛇",
+   "processing": "乌梢蛇（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，平",
+   "meridians": "肝经",
+   "functions": [
+    "祛风通络",
+    "止痉"
+   ],
+   "tags": [
+    "animal"
+   ],
+   "dose_g": [
+    6,
+    12
+   ],
+   "cautions": [
+    "动物药材，须专业指导使用"
+   ],
+   "modern": "目录收录的动物类，本系统仅作目录完整性收录，不参与任何组方"
+  },
+  {
+   "name": "蝮蛇",
+   "processing": "蝮蛇（干）",
+   "status": "药食同源目录（2002年名单）",
+   "nature": "甘，温",
+   "meridians": "肝经",
+   "functions": [
+    "祛风通络",
+    "攻毒"
+   ],
+   "tags": [
+    "animal"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "动物药材，须专业指导使用"
+   ],
+   "modern": "同上，仅目录完整性收录，不参与组方"
+  },
+  {
+   "name": "人参",
+   "processing": "人工种植人参（5年及以下参龄）",
+   "status": "药食同源目录（2014年试点，按属地公告核实）",
+   "nature": "甘、微苦，微温",
+   "meridians": "脾、肺、心、肾经",
+   "functions": [
+    "大补元气",
+    "复脉固脱",
+    "补脾益肺",
+    "生津安神"
+   ],
+   "tags": [
+    "qi_deficiency"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "实证、热证而正气不虚者忌",
+    "不宜与藜芦、五灵脂同用",
+    "高血压者慎用",
+    "食用范围限人工种植参"
+   ],
+   "modern": "2014 年起人工种植人参纳入按传统既是食品又是中药材试点；补气力峻，本系统气虚方向默认用党参/西洋参，人参仅作候选备注"
+  },
+  {
+   "name": "山银花",
+   "processing": "山银花",
+   "status": "药食同源目录（2014年试点，按属地公告核实）",
+   "nature": "甘，寒",
+   "meridians": "肺、心、胃经",
+   "functions": [
+    "清热解毒",
+    "疏散风热"
+   ],
+   "tags": [
+    "throat",
+    "wind_heat"
+   ],
+   "dose_g": [
+    5,
+    10
+   ],
+   "cautions": [
+    "脾胃虚寒者慎用"
+   ],
+   "modern": "与金银花同科不同种（灰毡毛忍冬等），功效相近，为其地方替代品"
+  },
+  {
+   "name": "当归",
+   "processing": "当归片",
+   "status": "药食同源目录（2014年试点，按属地公告核实）",
+   "nature": "甘、辛，温",
+   "meridians": "肝、心、脾经",
+   "functions": [
+    "补血活血",
+    "调经止痛",
+    "润肠通便"
+   ],
+   "tags": [
+    "blood_stasis",
+    "female_regulate",
+    "constipation"
+   ],
+   "dose_g": [
+    6,
+    12
+   ],
+   "cautions": [
+    "湿盛中满、大便溏泄者慎用",
+    "孕妇须在医师指导下使用",
+    "月经过多者慎用"
+   ],
+   "modern": "补血活血代表；试点目录品种，用前请核实属地口径；本系统血瘀方向仅将其列为备选并强化孕期禁忌提示"
+  },
+  {
+   "name": "姜黄",
+   "processing": "姜黄片",
+   "status": "药食同源目录（2014年试点，按属地公告核实）",
+   "nature": "辛、苦，温",
+   "meridians": "脾、肝经",
+   "functions": [
+    "破血行气",
+    "通经止痛"
+   ],
+   "tags": [
+    "blood_stasis",
+    "lipid"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "血虚无气滞血瘀者慎用",
+    "孕妇禁用",
+    "胆道梗阻者禁用"
+   ],
+   "modern": "姜黄素研究热门，但破血之性明确，孕妇禁用；本系统不入默认茶方"
+  },
+  {
+   "name": "草果",
+   "processing": "煨草果",
+   "status": "药食同源目录（2014年试点，按属地公告核实）",
+   "nature": "辛，温",
+   "meridians": "脾、胃经",
+   "functions": [
+    "燥湿温中",
+    "截疟除痰"
+   ],
+   "tags": [
+    "seasoning"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "阴虚血燥者忌",
+    "不入代茶饮，作香料"
+   ],
+   "modern": "香料类试点品种"
+  },
+  {
+   "name": "山柰",
+   "processing": "山柰片",
+   "status": "药食同源目录（2014年试点，按属地公告核实）",
+   "nature": "辛，温",
+   "meridians": "胃经",
+   "functions": [
+    "温中除湿",
+    "行气消食"
+   ],
+   "tags": [
+    "seasoning"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "阴虚血亏、胃有郁火者忌",
+    "不入代茶饮，作香料"
+   ],
+   "modern": "即沙姜，香料类试点品种"
+  },
+  {
+   "name": "西红花",
+   "processing": "西红花（少量冲泡）",
+   "status": "药食同源目录（2014年试点，按属地公告核实）",
+   "nature": "甘，平",
+   "meridians": "心、肝经",
+   "functions": [
+    "活血化瘀",
+    "凉血解毒",
+    "解郁安神"
+   ],
+   "tags": [
+    "blood_stasis",
+    "insomnia"
+   ],
+   "dose_g": [
+    1,
+    3
+   ],
+   "cautions": [
+    "孕妇禁用",
+    "月经过多者禁用",
+    "有出血倾向者慎用",
+    "用量严格控制在 3g 以内"
+   ],
+   "modern": "即藏红花；活血力强且昂贵，孕妇绝对禁忌；本系统不入默认茶方，仅目录收录"
+  },
+  {
+   "name": "夏枯草",
+   "processing": "夏枯草（果穗）",
+   "status": "药食同源目录（2014年试点，按属地公告核实）",
+   "nature": "辛、苦，寒",
+   "meridians": "肝、胆经",
+   "functions": [
+    "清肝泻火",
+    "明目",
+    "散结消肿"
+   ],
+   "tags": [
+    "blood_pressure",
+    "damp_heat"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "脾胃虚寒者慎用",
+    "长期大量服用有肝肾负担个案报道，不宜久服"
+   ],
+   "modern": "凉茶常用原料（王老吉配方成分）；血压方向食养参考，脾胃虚寒者规避"
+  },
+  {
+   "name": "布渣叶",
+   "processing": "布渣叶",
+   "status": "药食同源目录（2014年试点，按属地公告核实）",
+   "nature": "微酸，凉",
+   "meridians": "脾、胃经",
+   "functions": [
+    "消食化滞",
+    "清热利湿"
+   ],
+   "tags": [
+    "food_stagnation",
+    "damp_heat"
+   ],
+   "dose_g": [
+    15,
+    30
+   ],
+   "cautions": [
+    "脾胃虚寒者慎用"
+   ],
+   "modern": "岭南凉茶常用（廿四味成分），广东习用药材"
+  },
+  {
+   "name": "粉葛",
+   "processing": "粉葛片",
+   "status": "药食同源目录（2014年试点，按属地公告核实）",
+   "nature": "甘、辛，凉",
+   "meridians": "脾、胃、肺经",
+   "functions": [
+    "解肌退热",
+    "生津止渴",
+    "升阳止泻"
+   ],
+   "tags": [
+    "glucose",
+    "throat"
+   ],
+   "dose_g": [
+    9,
+    15
+   ],
+   "cautions": [
+    "胃寒者慎用"
+   ],
+   "modern": "甘葛藤块根，与野葛（葛根）为不同基原，淀粉含量更高、葛根素较低"
+  },
+  {
+   "name": "松花粉",
+   "processing": "破壁松花粉",
+   "status": "药食同源目录（2014年试点，按属地公告核实）",
+   "nature": "甘，温",
+   "meridians": "肝、脾经",
+   "functions": [
+    "收敛止血",
+    "燥湿敛疮（外用为主）",
+    "益气"
+   ],
+   "tags": [
+    "qi_deficiency"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "花粉过敏者禁用",
+    "血热者慎用"
+   ],
+   "modern": "马尾松/油松花粉，须破壁；过敏风险须提示"
+  },
+  {
+   "name": "荜茇",
+   "processing": "荜茇",
+   "status": "药食同源目录（2014年试点，按属地公告核实）",
+   "nature": "辛，热",
+   "meridians": "胃、大肠经",
+   "functions": [
+    "温中散寒",
+    "下气止痛"
+   ],
+   "tags": [
+    "seasoning"
+   ],
+   "dose_g": [
+    1,
+    3
+   ],
+   "cautions": [
+    "实热郁火、阴虚火旺者忌",
+    "不入代茶饮，作香料"
+   ],
+   "modern": "香料类试点品种"
+  },
+  {
+   "name": "肉苁蓉",
+   "processing": "酒苁蓉片",
+   "status": "药食同源目录（2019年试点转正）",
+   "nature": "甘、咸，温",
+   "meridians": "肾、大肠经",
+   "functions": [
+    "补肾阳",
+    "益精血",
+    "润肠通便"
+   ],
+   "tags": [
+    "qi_deficiency",
+    "constipation"
+   ],
+   "dose_g": [
+    6,
+    9
+   ],
+   "cautions": [
+    "阴虚火旺者忌",
+    "大便溏泄者忌",
+    "胃弱者慎用"
+   ],
+   "modern": "荒漠肉苁蓉（人工种植），2019 年试点转正；温补兼润下"
+  },
+  {
+   "name": "铁皮石斛",
+   "processing": "铁皮石斛（枫斗）",
+   "status": "药食同源目录（2019年试点转正）",
+   "nature": "甘，微寒",
+   "meridians": "胃、肾经",
+   "functions": [
+    "益胃生津",
+    "滋阴清热"
+   ],
+   "tags": [
+    "yin_deficiency",
+    "glucose",
+    "throat"
+   ],
+   "dose_g": [
+    6,
+    12
+   ],
+   "cautions": [
+    "温热病早期、湿温尚未化燥者忌",
+    "脾胃虚寒者慎用",
+    "须久泡或煎煮，胶质方出"
+   ],
+   "modern": "滋阴名贵品种（人工种植），2019 年试点转正"
+  },
+  {
+   "name": "山茱萸",
+   "processing": "酒萸肉",
+   "status": "药食同源目录（2019年试点转正）",
+   "nature": "酸、涩，微温",
+   "meridians": "肝、肾经",
+   "functions": [
+    "补益肝肾",
+    "收涩固脱"
+   ],
+   "tags": [
+    "yin_deficiency",
+    "qi_deficiency"
+   ],
+   "dose_g": [
+    6,
+    12
+   ],
+   "cautions": [
+    "素有湿热、小便淋涩者不宜"
+   ],
+   "modern": "六味地黄丸君药之一，2019 年试点转正"
+  },
+  {
+   "name": "天麻",
+   "processing": "天麻片",
+   "status": "药食同源目录（2019年试点转正）",
+   "nature": "甘，平",
+   "meridians": "肝经",
+   "functions": [
+    "息风止痉",
+    "平抑肝阳",
+    "祛风通络"
+   ],
+   "tags": [
+    "blood_pressure"
+   ],
+   "dose_g": [
+    3,
+    9
+   ],
+   "cautions": [
+    "气血虚甚者慎用",
+    "个别人有过敏反应"
+   ],
+   "modern": "2019 年试点转正（人工种植）；头晕方向传统用材，但头晕病因复杂，本系统只作食养参考并强调就医排查"
+  },
+  {
+   "name": "杜仲叶",
+   "processing": "杜仲叶（干）",
+   "status": "药食同源目录（2019年试点转正）",
+   "nature": "微辛，温",
+   "meridians": "肝、肾经",
+   "functions": [
+    "补肝肾",
+    "强筋骨"
+   ],
+   "tags": [
+    "blood_pressure",
+    "qi_deficiency"
+   ],
+   "dose_g": [
+    10,
+    15
+   ],
+   "cautions": [
+    "阴虚火旺者慎用"
+   ],
+   "modern": "杜仲的叶（非皮），绿原酸与杜仲胶苷类为主，2019 年试点转正"
+  },
+  {
+   "name": "地黄",
+   "processing": "生地黄片",
+   "status": "药食同源目录（2023年增补）",
+   "nature": "甘，寒",
+   "meridians": "心、肝、肾经",
+   "functions": [
+    "清热凉血",
+    "养阴生津"
+   ],
+   "tags": [
+    "yin_deficiency",
+    "damp_heat"
+   ],
+   "dose_g": [
+    10,
+    15
+   ],
+   "cautions": [
+    "脾虚湿滞、腹满便溏者忌",
+    "本条为生地黄；熟地黄滋腻另论"
+   ],
+   "modern": "2023 年 11 月国家卫健委公告新增（党参等 9 种为 2023 年初、地黄麦冬天冬化橘红为同年 11 月批次），使用前请核实最新公告口径"
+  },
+  {
+   "name": "麦冬",
+   "processing": "麦冬（去芯）",
+   "status": "药食同源目录（2023年增补）",
+   "nature": "甘、微苦，微寒",
+   "meridians": "心、肺、胃经",
+   "functions": [
+    "养阴生津",
+    "润肺清心"
+   ],
+   "tags": [
+    "yin_deficiency",
+    "throat",
+    "insomnia",
+    "glucose"
+   ],
+   "dose_g": [
+    6,
+    12
+   ],
+   "cautions": [
+    "脾胃虚寒泄泻、风寒咳嗽者忌"
+   ],
+   "modern": "滋阴经典（生脉饮成分），2023 年增补"
+  },
+  {
+   "name": "天冬",
+   "processing": "天冬片",
+   "status": "药食同源目录（2023年增补）",
+   "nature": "甘、苦，寒",
+   "meridians": "肺、肾经",
+   "functions": [
+    "养阴润燥",
+    "清肺生津"
+   ],
+   "tags": [
+    "yin_deficiency",
+    "throat",
+    "constipation"
+   ],
+   "dose_g": [
+    6,
+    12
+   ],
+   "cautions": [
+    "脾虚泄泻、外感风寒咳嗽者忌",
+    "性寒滑肠"
+   ],
+   "modern": "滋阴润燥，与麦冬常相须为用，2023 年增补"
+  },
+  {
+   "name": "化橘红",
+   "processing": "化橘红片",
+   "status": "药食同源目录（2023年增补）",
+   "nature": "辛、苦，温",
+   "meridians": "肺、脾经",
+   "functions": [
+    "理气宽中",
+    "燥湿化痰"
+   ],
+   "tags": [
+    "cough",
+    "food_stagnation"
+   ],
+   "dose_g": [
+    3,
+    6
+   ],
+   "cautions": [
+    "阴虚燥咳者不宜",
+    "气虚者慎用"
+   ],
+   "modern": "化州柚未成熟果实外层果皮，化痰名品，2023 年增补"
+  }
+ ]
+}

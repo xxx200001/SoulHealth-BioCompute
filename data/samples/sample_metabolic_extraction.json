@@ -1,0 +1,19 @@
+{
+  "_说明": "第二病种演示样例（显式 MOCK 模式专用）：46 岁男性生化化验单——空腹血糖/糖化血红蛋白升高 + 血脂异常 + 高尿酸，肝酶正常。用于验证换一个例子（非脂肪肝患者）时规则引擎、机制链、组方与报告全链路正常工作。字段结构与真实抽取完全一致。",
+  "document_type": "lab_report",
+  "engine": "mock",
+  "exam_date": "2026-07-15",
+  "patient": {"sex": "male", "age_years": 46},
+  "observations": [
+    {"code": "GLU", "display": "空腹血糖", "value_num": 7.9, "unit": "mmol/L", "ref_low": 3.9, "ref_high": 6.1, "abnormal_flag": "H"},
+    {"code": "HBA1C", "display": "糖化血红蛋白", "value_num": 6.8, "unit": "%", "ref_low": 4.0, "ref_high": 6.0, "abnormal_flag": "H"},
+    {"code": "TG", "display": "甘油三酯", "value_num": 3.4, "unit": "mmol/L", "ref_low": 0.4, "ref_high": 1.7, "abnormal_flag": "H"},
+    {"code": "TC", "display": "总胆固醇", "value_num": 6.6, "unit": "mmol/L", "ref_low": 2.9, "ref_high": 5.2, "abnormal_flag": "H"},
+    {"code": "LDL", "display": "低密度脂蛋白胆固醇", "value_num": 4.4, "unit": "mmol/L", "ref_low": 1.9, "ref_high": 3.4, "abnormal_flag": "H"},
+    {"code": "HDL", "display": "高密度脂蛋白胆固醇", "value_num": 0.9, "unit": "mmol/L", "ref_low": 1.0, "ref_high": 1.6, "abnormal_flag": "L"},
+    {"code": "UA", "display": "血尿酸", "value_num": 512, "unit": "µmol/L", "ref_low": 208, "ref_high": 428, "abnormal_flag": "H"},
+    {"code": "ALT", "display": "丙氨酸氨基转移酶", "value_num": 24, "unit": "U/L", "ref_low": 0, "ref_high": 40, "abnormal_flag": "N"}
+  ],
+  "findings": [],
+  "impressions": []
+}

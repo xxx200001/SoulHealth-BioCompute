@@ -1,0 +1,9 @@
+# —— 服务层（必装）——
+fastapi>=0.110
+uvicorn>=0.29
+python-multipart>=0.0.9
+# —— 真实 LLM 抽取（MOCK 模式可不装）——
+anthropic>=0.34
+# —— 可选：离线 OCR 兜底（体积较大，可后装）——
+# paddleocr>=2.8
+# paddlepaddle>=2.6

@@ -1,0 +1,6 @@
+{
+  "_说明": "AlphaFold DB 演示缓存（MOCK）。真实模式从 https://alphafold.ebi.ac.uk/api/prediction/{uniprot} 拉取；此处数值仅用于流程演示，报告与前端均会标注「演示缓存」。",
+  "Q9NST1": {"gene": "PNPLA3", "entry_id": "AF-Q9NST1-F1", "mean_plddt": 71.8, "page_url": "https://alphafold.ebi.ac.uk/entry/Q9NST1", "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q9NST1-F1-model_v4.cif"},
+  "Q14397": {"gene": "GCKR", "entry_id": "AF-Q14397-F1", "mean_plddt": 78.4, "page_url": "https://alphafold.ebi.ac.uk/entry/Q14397", "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q14397-F1-model_v4.cif"},
+  "Q15848": {"gene": "ADIPOQ", "entry_id": "AF-Q15848-F1", "mean_plddt": 82.6, "page_url": "https://alphafold.ebi.ac.uk/entry/Q15848", "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q15848-F1-model_v4.cif"}
+}
