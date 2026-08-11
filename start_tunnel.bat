@@ -11,5 +11,10 @@ echo [*] 正在开启公网访问 (端口 9000)...
 echo [*] 稍后终端中输出的 https://xxxx.trycloudflare.com 即为公网链接
 echo.
 
-npx cloudflared tunnel --url http://localhost:9000
+where cloudflared >nul 2>&1
+if %errorlevel% equ 0 (
+    cloudflared tunnel --url http://localhost:9000
+) else (
+    npx cloudflared tunnel --url http://localhost:9000
+)
 pause
