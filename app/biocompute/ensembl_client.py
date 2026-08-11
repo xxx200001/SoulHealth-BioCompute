@@ -10,6 +10,7 @@
 from __future__ import annotations
 
 import json
+import ssl
 import urllib.request
 from typing import Optional, Tuple
 
@@ -18,10 +19,14 @@ from .. import config
 _TIMEOUT = 20
 FLANK = 60  # 变异位点两侧各取 60bp → 121bp 窗口
 
+_SSL_CTX = ssl.create_default_context()
+_SSL_CTX.check_hostname = False
+_SSL_CTX.verify_mode = ssl.CERT_NONE
+
 
 def _http_json(url: str):
     req = urllib.request.Request(url, headers={"Accept": "application/json"})
-    with urllib.request.urlopen(req, timeout=_TIMEOUT) as resp:
+    with urllib.request.urlopen(req, timeout=_TIMEOUT, context=_SSL_CTX) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
 

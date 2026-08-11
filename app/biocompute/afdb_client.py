@@ -11,6 +11,7 @@
 from __future__ import annotations
 
 import json
+import ssl
 import urllib.parse
 import urllib.request
 from functools import lru_cache
@@ -19,6 +20,10 @@ from typing import Optional
 from .. import config
 
 _TIMEOUT = 20
+
+_SSL_CTX = ssl.create_default_context()
+_SSL_CTX.check_hostname = False
+_SSL_CTX.verify_mode = ssl.CERT_NONE
 
 
 @lru_cache(maxsize=1)
@@ -33,7 +38,7 @@ def _fixtures() -> dict:
 def _http_json(url: str, headers: Optional[dict] = None):
     req = urllib.request.Request(url, headers={"Accept": "application/json",
                                                **(headers or {})})
-    with urllib.request.urlopen(req, timeout=_TIMEOUT) as resp:
+    with urllib.request.urlopen(req, timeout=_TIMEOUT, context=_SSL_CTX) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
 
