@@ -13,24 +13,22 @@ print("==================================================\n", flush=True)
 print("[*] 正在启动穿透服务...", flush=True)
 
 def try_launch():
-    # 优先尝试本地已有的 cloudflared
-    try:
-        proc = subprocess.Popen(
-            ["cloudflared", "tunnel", "--url", f"http://localhost:{port}"],
-            stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-            text=True, encoding="utf-8", errors="replace"
-        )
-        return proc
-    except FileNotFoundError:
-        pass
-
-    # 降级使用 npx --yes 免交互自动安装运行
-    proc = subprocess.Popen(
-        ["npx", "--yes", "cloudflared", "tunnel", "--url", f"http://localhost:{port}"],
-        stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-        text=True, encoding="utf-8", errors="replace"
-    )
-    return proc
+    cmds = [
+        f"cloudflared tunnel --url http://localhost:{port}",
+        f"npx --yes cloudflared tunnel --url http://localhost:{port}"
+    ]
+    for cmd in cmds:
+        try:
+            proc = subprocess.Popen(
+                cmd,
+                stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                text=True, encoding="utf-8", errors="replace",
+                shell=True
+            )
+            return proc
+        except Exception:
+            continue
+    raise RuntimeError("无法启动穿透进程")
 
 proc = try_launch()
 found = False
