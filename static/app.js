@@ -564,7 +564,7 @@ function renderResults(d) {
   $("#reportList").innerHTML = Object.values(groups).map((g) => `
     <div class="report"><b>${esc(g.title)}</b>
       ${g.items.map((r) => `<a class="btn ${r.format === "docx" ? "primary" : "ghost"}"
-        href="${esc(r.download_url)}?token=${encodeURIComponent(state.token || "")}">下载 ${r.format === "docx" ? "Word" : "Markdown"}</a>`).join("")}
+        href="${esc(r.download_url)}?token=${encodeURIComponent(state.token || "")}" target="_blank" download>下载 ${r.format === "docx" ? "Word" : "Markdown"}</a>`).join("")}
     </div>`).join("") || `<p class="hint">本次分析无报告产物。</p>`;
   unlock("#secReports");
 }

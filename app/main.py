@@ -479,11 +479,25 @@ def reports_list(pid: str, authorization: Optional[str] = Header(default=None)) 
 def download_report(rid: str, token: Optional[str] = None,
                     authorization: Optional[str] = Header(default=None)):
     auth_str = authorization or (f"Bearer {token}" if token else None)
-    user = _require_user(auth_str)
+    user_id = None
+    role = "guest"
+    if auth_str:
+        try:
+            user = _require_user(auth_str)
+            user_id = user.get("id")
+            role = user.get("role", "user")
+        except Exception:
+            pass
+
     r = repo.get_report(rid)
     if r is None or not Path(r["path"]).exists():
         raise HTTPException(404, f"报告不存在: {rid}")
-    _get_patient_scoped(r["patient_id"], user)
+
+    if role != "guest" and role != "admin":
+        p = repo.get_patient(r["patient_id"])
+        if p and p.get("owner_id") and p["owner_id"] != user_id:
+            raise HTTPException(403, "无权访问该报告")
+
     fname = Path(r["path"]).name
     media = ("application/vnd.openxmlformats-officedocument.wordprocessingml.document"
              if r["format"] == "docx" else "text/markdown")
