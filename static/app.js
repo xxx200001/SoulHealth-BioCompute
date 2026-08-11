@@ -535,8 +535,16 @@ function renderResults(d) {
       || "本次无生物计算调用。")}</div>`;
 
   const interp = d.interpretation || {};
+  function renderMd(t) {
+    if (!t) return "";
+    let h = esc(t);
+    h = h.replace(/^#+\s*(.*)$/gm, '<h4 class="md-h4">$1</h4>');
+    h = h.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    h = h.replace(/\n/g, '<br>');
+    return h;
+  }
   const interpHtml = interp.available
-    ? `<div class="interp-text">${esc(interp.text).replace(/\n/g, "<br>")}</div>
+    ? `<div class="interp-text">${renderMd(interp.text)}</div>
        <p class="hint">由大模型（${esc(interp.model || "")}）通读本次结构化结果生成，已过合规校验；供参考，不构成诊疗意见。</p>`
     : `<div class="interp-off">${esc(interp.reason || "本次未生成 AI 综合解读。")}</div>`;
 
