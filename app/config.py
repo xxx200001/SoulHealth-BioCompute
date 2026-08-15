@@ -57,9 +57,12 @@ UNIPROT_API: str = os.getenv("SOULHEALTH_UNIPROT_API",
                              "https://rest.uniprot.org/uniprotkb/search").strip()
 ENSEMBL_API: str = os.getenv("SOULHEALTH_ENSEMBL_API",
                              "https://rest.ensembl.org").strip()
+# EVO2 推理服务地址：默认指向 WSL2 中自建的 evo2_server.py 服务。
+# 对方电脑在 WSL2 中运行 evo2_server.py 后，Windows 侧通过 localhost:8899 访问。
+# 如果使用 NVIDIA NIM 云端服务，改为对应 URL 并设置 NVIDIA_API_KEY。
 EVO2_URL: str = os.getenv(
     "SOULHEALTH_EVO2_URL",
-    "https://health.api.nvidia.com/v1/biology/arc/evo2-40b/generate").strip()
+    "http://localhost:8899/v1/evo2/score").strip()
 BIOCOMPUTE_FIXTURES = SAMPLE_DIR / "biocompute"
 
 # 报告中是否打印真实姓名（默认关闭：报告仅用化名，姓名只存本地库）
@@ -85,7 +88,8 @@ def runtime_info() -> dict:
         "llm_model": LLM_MODEL,
         "ocr_engine": OCR_ENGINE,
         "biocompute_mode": BIOCOMPUTE_MODE,
-        "evo2_ready": bool(NVIDIA_API_KEY),
+        "evo2_url": EVO2_URL,
+        "evo2_ready": "localhost" in EVO2_URL or "127.0.0.1" in EVO2_URL or bool(NVIDIA_API_KEY),
         "db_path": str(DB_PATH),
         "secret_key_is_default": SECRET_KEY_IS_DEFAULT,
     }
