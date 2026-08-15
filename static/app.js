@@ -448,17 +448,8 @@ async function refreshArchive(pre) {
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function playRail(trace, fast = false) {
-  const items = [...document.querySelectorAll("#railTrack li")];
-  items.forEach((li) => { li.className = ""; li.querySelector("em").textContent = ""; });
-  for (const step of trace || []) {
-    const li = items.find((x) => x.dataset.step === step.step);
-    if (!li) continue;
-    li.classList.add("running");
-    await sleep(fast ? 120 : Math.min(Math.max(step.ms, 320), 900));
-    li.classList.remove("running"); li.classList.add("done");
-    li.querySelector("em").textContent = `${step.ms} ms · ${step.detail.slice(0, 26)}…`;
-    li.title = step.detail;
-  }
+  // rail sidebar removed – no-op
+  return;
 }
 
 const block = (title, inner) =>
